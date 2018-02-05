@@ -1,0 +1,6 @@
+<h1><%= @post.title %></h1>
+<div><%= @post.body %></div>
+<%= link_to 'edit post', edit_post_path %>
+<%= link_to 'Delete post', post_path(@post), method: :delete, data: {confirm: "aru u sure?"} %>
+
+
